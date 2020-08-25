@@ -12,7 +12,7 @@
         if (a == 0) {
             window.alert(`Toda função do 2º grau tem a ≠ 0`)
         } else {
-            delta.innerHTML = ` ${delt}`
+            delta.innerHTML = ` ${(delt).toFixed(2)}`
             if (delt < 0) {
                 //Δ
                 res1.innerHTML = ` <strong>impossivel, delta negativo</strong>`
@@ -54,14 +54,7 @@
             } else {
                 con.innerHTML = ` <strong>cima</strong>`
             }
-            //invertendo grafico              
-            if (x1 > x2) {
-                var pri = x2
-                var seg = x1
-            } else {
-                var pri = x1
-                var seg = x2
-            }
+
 
 
 
