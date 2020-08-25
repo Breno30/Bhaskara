@@ -68,7 +68,8 @@ if (navigator.userAgent.match(/Android/i)
                 },
                 options: {
                     animation: {
-                        duration: 0
+                        //animação dura 1 segundo
+                        duration: 1000
 
                     }
 
