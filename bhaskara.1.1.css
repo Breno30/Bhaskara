@@ -24,10 +24,7 @@ h3{
     font: normal 25pt;
     float: left;
 }
-h4{
-    height: 50px;
-    width: 200px;
-}
+
 table, th, tr{
     padding: 2%;
 }
