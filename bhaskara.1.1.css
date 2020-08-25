@@ -23,7 +23,11 @@ h3{
 }
 
 table, th, tr{
+    border: 1px solid gray;
     padding: 2%;
+}
+th{
+    width: 25%;
 }
 table{
     width:50%;
