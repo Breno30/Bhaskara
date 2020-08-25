@@ -1,7 +1,3 @@
-
-
-
-
     function bhaskara() {
 
         var a = window.document.getElementById('txtn1').value
@@ -27,6 +23,30 @@
                 res1.innerHTML = ` <strong>${x1}</strong>`
                 res2.innerHTML = ` <strong>${x2}</strong>`
                 vert.innerHTML = ` <strong>${(-b / (2 * a)).toFixed(2)}, ${(-delt / (4 * a)).toFixed(2)}</strong>`
+                //grafico
+                let myChart = document.getElementById('myChart').getContext('2d');
+                let massPopChart = new Chart(myChart, {
+                    type: 'line',
+                    data: {
+                        //x
+                        labels: [x1, (-b / (2 * a)).toFixed(2), x2],
+
+                        datasets: [{
+                            label: 'x',
+                            //y
+                            data: [0, (-delt / (4 * a)).toFixed(2), 0],
+                            backgroundColor: 'transparent'
+                        }]
+                    },
+                    options: {
+                        animation: {
+                            //animação dura 1 segundo
+                            duration: 1000
+
+                        }
+
+                    }
+                });
             }
             //condicoes concavidade
             if (a < 0) {
@@ -44,30 +64,7 @@
             }
 
 
-            //grafico
-            let myChart = document.getElementById('myChart').getContext('2d');
-            let massPopChart = new Chart(myChart, {
-                type: 'line',
-                data: {
-                    //x
-                    labels: [x1, (-b / (2 * a)).toFixed(2), x2],
 
-                    datasets: [{
-                        label: 'x',
-                        //y
-                        data: [0, (-delt / (4 * a)).toFixed(2), 0],
-                        backgroundColor: 'transparent'
-                    }]
-                },
-                options: {
-                    animation: {
-                        //animação dura 1 segundo
-                        duration: 1000
-
-                    }
-
-                }
-            });
 
         }
 
