@@ -1,9 +1,9 @@
-# página calculadora de bhaskara.
+# :newspaper: página calculadora de bhaskara.
 
 recebe: valores de A, B e C.
 
 retorna: gráfico, delta, x1, x2, concavidade e vérticide da parabola.
 
-# ferramentas
+# :gear: ferramentas
 
 [Chart.js](https://www.chartjs.org/)
