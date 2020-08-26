@@ -18,8 +18,8 @@
                 res1.innerHTML = ` <strong>impossivel, delta negativo</strong>`
                 res2.innerHTML = ` <strong>impossivel, delta negativo</strong>`
             } else {
-                var x1 = ((- b + (delt ** (1 / 2))) / 2 * a).toFixed(2)
-                var x2 = ((- b - (delt ** (1 / 2))) / 2 * a).toFixed(2)
+                var x1 = ((- b + (delt ** (1 / 2))) / (2 * a)).toFixed(2)
+                var x2 = ((- b - (delt ** (1 / 2))) / (2 * a)).toFixed(2)
                 res1.innerHTML = ` <strong>${x1}</strong>`
                 res2.innerHTML = ` <strong>${x2}</strong>`
                 vert.innerHTML = ` <strong>${(-b / (2 * a)).toFixed(2)}, ${(-delt / (4 * a)).toFixed(2)}</strong>`
