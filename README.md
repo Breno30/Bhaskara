@@ -1,4 +1,7 @@
-# :newspaper: página calculadora de bhaskara.
+# :white_check_mark: teste a página!
+[clique aqui](https://breno30.github.io/bhaskara_html/) para testar
+
+# :newspaper: calculadora de bhaskara.
 
 recebe: valores de A, B e C.
 
