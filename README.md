@@ -1,5 +1,5 @@
 # :white_check_mark: teste a página!
-[clique aqui](https://breno30.github.io/bhaskara_html/) para testar</br>
+[clique aqui](https://breno30.github.io/bhaskara-html/) para testar</br>
 
 # :newspaper: calculadora de bhaskara.
 
