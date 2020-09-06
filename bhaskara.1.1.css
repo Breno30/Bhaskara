@@ -1,23 +1,4 @@
 body {
-    font: normal 25pt Arial white;
-}
-input{
-    margin: 1%;
-    font: normal 20pt Arial gray;
-    background-color: gray;
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
-    border-color: gray;
-    box-shadow:5px 5px 10px #00000050;
-    text-align: center;
-    
-}
-h1{
-    font: 25pt;
-    text-align: center;
-}
-h3{body {
     font-size: 130%;
 
 }
@@ -70,13 +51,4 @@ table, th, tr {
     border-radius:10px ;
     width: 25px;
     height: 16px;
-}
-    padding: 2%;
-    font: normal 25pt;
-    float: left;
-}
-
-table, th, tr{
-    border: 1px solid gray;
-    padding: 2%;
 }

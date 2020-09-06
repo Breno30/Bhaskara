@@ -3,11 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -71,61 +66,4 @@
 
 
 </body>
-</html>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Bhaskara</title>
-</head>
-<body>
-    <title>Calculadora bhaskara</title>
-    <link rel="stylesheet" href="bhaskara.1.1.css">
-    </head>
-    <body>
-
-        <h1>Bhaskara</h1>
-            <center>
-                <!--monttando eestrutura-->
-                <input type="number" name="txtn1" id="txtn1"> x²  +
-                <input type="number" name="txtn2" id="txtn2">  x  +
-                <input type="number" name="txtn3" id="txtn3">
-            </center>
-            <br />
-            <center>
-                <input type="button" value="RESETAR" onclick="window.location.reload()">
-                <input type="button" value="CALCULAR" onclick="bhaskara()">
-            </center>
-            <h3>
-                <table style="width:50%; position:fixed; left:0;">
-                    <tr>
-                        <th style="width: 50%;">delta Δ </th>
-                        <th id="delta"></th>
-                    </tr>
-                    <tr>
-                        <th>x1  </th>
-                        <th id="res1"></th>
-                    </tr>
-                    <tr>
-                        <th>x2  </th>
-                        <th id="res2"></th>
-                    </tr>
-                    <tr>
-                        <th>Concavidade para </th>
-                        <th id="con"></th>
-                    </tr>
-                    <tr>
-                        <th>Vértice da parábola  </th>
-                        <th id="vert"></th>
-                    </tr>
-                </table>
-
-            </h3>
-
-            <!--preparando grafico-->
-            <div class="container" style="width:50%; position:fixed; right:0;" >
-
-                <canvas id="myChart"></canvas>
-            </div>
-
-            <script src="bhaskara.1.1.js"></script>
-    </body>
 </html>
