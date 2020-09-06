@@ -1,4 +1,10 @@
-
+//sons
+var turn_off = document.createElement("audio");
+turn_off.src = 'turn_off.mp3';
+turn_off.volume = 0.5;
+var turn_on = document.createElement("audio");
+turn_on.src = 'turn_on.mp3';
+turn_on.volume = 0.5;
 
 var dark
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -12,8 +18,10 @@ muda_cor()
 
 function mode() {
     if (dark == true) {
+        turn_off.play();
         dark = false;
     } else {
+        turn_on.play();
         dark = true;
     }
     muda_cor()
@@ -25,7 +33,7 @@ function muda_cor() {
     if (dark == true) {
         document.body.style.backgroundColor = '#232931';
         document.body.style.color = 'white';
-        document.getElementById('mode_back').style.backgroundColor = '#ADFF2F';
+        document.getElementById('mode_front').style.backgroundColor = '#232931';
         document.getElementById('mode_front').style.left = '10px';
 
   
@@ -34,7 +42,7 @@ function muda_cor() {
     } else {
         document.body.style.backgroundColor = 'white';
         document.body.style.color = 'black';
-        document.getElementById('mode_back').style.backgroundColor = '#f6f3ed';
+        document.getElementById('mode_front').style.backgroundColor = 'white';
         document.getElementById('mode_front').style.left = '0';
 
 
