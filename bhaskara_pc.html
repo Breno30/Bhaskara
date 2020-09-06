@@ -3,7 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Bhaskara</title>
+    <title>Calculadora bhaskara</title>
+    <link rel="stylesheet" href="bhaskara.1.1.css">
+    </head>
+<body>
+    <script src="bhaskara.1.1.js"></script>
+    <h1>Bhaskara</h1>
+
+    <div id="mode">
+
+        <input id="mode_back" type="button" onclick="mode()" />
+        <input id="mode_front" type="button" onclick="mode()" />
+
+
+    </div>
+    <center>
+        <!--monttando eestrutura-->
+        <input type="number" name="txtn1" id="txtn1" placeholder="a"> x²  +
+        <input type="number" name="txtn2" id="txtn2" placeholder="b">  x  +
+        <input type="number" name="txtn3" id="txtn3" placeholder="c">
+    </center>
+    <br />
+    <center>
+        <input type="button" value="RESETAR" onclick="window.location.reload()">
+        <input type="button" value="CALCULAR" onclick="bhaskara()">
+    </center>
+
+    <table style="width:49.5%; position:fixed; left:0.5%;">
+        <tr>
+            <th style="width: 50%;">delta Δ </th>
+            <th id="delta"></th>
+        </tr>
+        <tr>
+            <th>x1  </th>
+            <th id="res1"></th>
+        </tr>
+        <tr>
+            <th>x2  </th>
+            <th id="res2"></th>
+        </tr>
+        <tr>
+            <th>Concavidade para </th>
+            <th id="con"></th>
+        </tr>
+        <tr>
+            <th>Vértice da parábola  </th>
+            <th id="vert"></th>
+        </tr>
+    </table>
+
+
+
+    <!--preparando grafico-->
+    <div class="container" style="width:50%; position:fixed; right:0;">
+
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+</body>
+</html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Bhaskara</title>
