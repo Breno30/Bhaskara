@@ -33,7 +33,7 @@ function muda_cor() {
     } else {
         document.body.style.backgroundColor = 'white';
         document.body.style.color = 'black';
-        document.getElementById('mode_front').style.color = 'white';
+        document.getElementById('mode_front').style.backgroundColor = '#FFFFFF';
         document.getElementById('mode_front').style.left = '0';
 
 
