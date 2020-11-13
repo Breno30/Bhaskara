@@ -1,10 +1,3 @@
-//sons
-var turn_off = document.createElement("audio");
-turn_off.src = 'turn_off.mp3';
-turn_off.volume = 0.5;
-var turn_on = document.createElement("audio");
-turn_on.src = 'turn_on.mp3';
-turn_on.volume = 0.5;
 
 var dark
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -18,10 +11,8 @@ muda_cor()
 
 function mode() {
     if (dark == true) {
-        turn_off.play();
         dark = false;
     } else {
-        turn_on.play();
         dark = true;
     }
     muda_cor()
