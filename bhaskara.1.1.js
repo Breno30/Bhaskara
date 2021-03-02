@@ -102,7 +102,7 @@ function muda_cor() {
                 );
             }
             //condicoes concavidade
-            if (a < 0) {
+            if (a > 0) {
                 con.innerHTML = ` baixo`
             } else {
                 con.innerHTML = ` cima`
