@@ -24,7 +24,7 @@ function muda_cor() {
     if (dark) {
         document.body.style.backgroundColor = '#232931';
         document.body.style.color = 'white';
-        //document.getElementById('mode_front').style.backgroundColor = '#232931';
+        document.getElementById('mode_front').style.backgroundColor = '#232931';
         document.getElementById('mode_front').style.left = '10px';
 
   
