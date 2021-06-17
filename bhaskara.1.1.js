@@ -1,24 +1,3 @@
-
-var dark
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    dark = true;
-
-} else {
-    dark = false;
-}
-muda_cor()
-
-
-function mode() {
-    if (dark) {
-        dark = false;
-    } else {
-        dark = true;
-    }
-    muda_cor()
-}
-
-
 function muda_cor() {
     //muda cor da pagina
     if (dark) {
