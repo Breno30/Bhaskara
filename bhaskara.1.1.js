@@ -10,7 +10,7 @@ muda_cor()
 
 
 function mode() {
-    if (dark == true) {
+    if (dark) {
         dark = false;
     } else {
         dark = true;
@@ -21,7 +21,7 @@ function mode() {
 
 function muda_cor() {
     //muda cor da pagina
-    if (dark == true) {
+    if (dark) {
         document.body.style.backgroundColor = '#232931';
         document.body.style.color = 'white';
         document.getElementById('mode_front').style.backgroundColor = '#232931';
