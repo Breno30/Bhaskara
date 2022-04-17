@@ -56,6 +56,8 @@ function bhaskara() {
 
             }
             );
+
+            document.getElementById("tabela").hidden = false;
         }
         //condicoes concavidade
         if (a > 0)

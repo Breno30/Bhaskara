@@ -21,6 +21,7 @@ table, th, tr {
     margin: 0 auto;
     border: 1px solid;
     padding: 2%;
+    margin: 2%;
 }
 #mode {
     position: fixed;
